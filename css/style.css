@@ -153,6 +153,18 @@ a {
 .navbar-collapse {
   flex-grow: inherit;
 }
+.navbar-toggler {
+  padding: 0;
+}
+.navbar-toggler-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: none;
+}
+.navbar-toggler-icon i {
+  color: #fff;
+}
 @media (max-width: 767px) {
   .navbar {
     height: auto;
