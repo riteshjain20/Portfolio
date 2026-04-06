@@ -467,6 +467,7 @@ a {
 .tech_content {
   display: grid;
   grid-template-columns: repeat(6,1fr);
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   gap: 20px;
 }
 .tech_item {
@@ -499,7 +500,7 @@ a {
     padding: 50px 10px;
   }
   .tech_content {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   }
 }
 
