@@ -148,6 +148,13 @@ a {
   font-weight: 400;
   padding: 0 !important;
   color: #fff;
+  transition: all 0.6s ease;
+}
+.nav-link.active {
+  background-image: var(--theme-shade-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.6s ease;
 }
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
   color: #fff;
@@ -175,12 +182,24 @@ a {
   .navbar {
     height: auto;
   }
+  .navbar .container {
+    padding: 0;
+  }
   .navbar-nav {
     align-items: flex-start;
     gap: 0px;
   }
+  .nav-item:has(.nav-link.active) {
+    background-color: rgb(15 22 41);
+  }
+  .navbar-brand {
+    padding-left: 10px;
+  }
+  .navbar-toggler {
+    padding-right: 10px;
+  }
   .nav-item {
-    padding: 15px 0px;
+    padding: 12px 10px;
     width: 100%;
   } 
 }
