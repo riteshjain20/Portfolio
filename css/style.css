@@ -491,7 +491,7 @@ a {
   object-fit: contain;
 }
 .tech_item p {
-  font-size: 15px;
+  font-size: 15px;f
   margin-bottom: 0;
   color: #fff;
 }
@@ -528,8 +528,8 @@ a {
   height: 100%;
 }
 .project_card_title {
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 500;
   margin-bottom: 15px;
   color: var(--theme-font-primary);
 }
@@ -575,7 +575,7 @@ a {
   border-radius: 15px 15px 0px 0px;
 }
 .project_card_content {
-  padding: 15px;
+  padding: 30px 15px;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -688,4 +688,32 @@ a {
   margin: 0;
   text-align: center;
   color: #fff;
+}
+
+
+.why_hire_me_wrapper {
+  padding: var(--theme-section-spacing);
+  background: var(--section-bg-dark);
+}
+.why_hire_me_content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
+}
+.why_hire_me_card {
+  padding: 30px;
+  border-radius: 20px;
+  background-color: var(--theme-card-bg);
+}
+.card_title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: var(--theme-font-primary);
+}
+.card_desc {
+  font-size: var(--theme-font-size-small);
+  font-weight: 400;
+  padding-bottom: 0px;
+  color: var(--theme-font-tertiary);
 }
